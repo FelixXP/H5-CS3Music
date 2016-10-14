@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"  id="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+	<link rel="stylesheet" type="text/css" href="css/music.css">
+	<script type="text/javascript" src="js/lyrics.js"></script>
+	<title>个人喜欢的音乐列表</title>
+</head>
+<body>
+	<!--播放页面 -->
+	<div id="wrapper">
+		<!-- bg  背景图 -->
+		<div class="bg"></div>
+		<div class="bg-black"></div>
+		<!-- header  顶部歌曲名,歌手名 -->
+		<div class="header">
+			<div id="tofirstpage"></div>
+			<div class="song" id="songName"></div>
+			<div class="artist" id="artist"></div>
+		</div>
+		<!-- center  中间部分 -->
+		<div class="center">
+			<img id="styli" class="play-needle" src="img/play_needle.png" alt="">
+			<div class="disk-bg"></div>
+			<div class="disk">
+				<img class="disk-album-bg" src="" alt=""  >
+				<img class="disk-music-bg" src="img/play_disc.png" alt="">
+			</div>
+			<div class="disk">
+				<img class="disk-album-bg" src="" alt=""  >
+				<img class="disk-music-bg" src="img/play_disc.png" alt="">
+			</div>
+		</div>
+		<!-- 歌词 -->
+		<div class="lyric">
+			<div id="line"></div>
+			<ul></ul>
+		</div>
+		<!-- footer 底部 -->
+		<div class="footer">
+			<!--process 进度条部分 -->
+			<div id="process">
+				<!--currentTime 当前时间 -->
+				<span id="currentTime">00:00</span>
+				<!--process-bar 进度条 -->
+				<div id="process-bar">
+					<div id="process-all"></div>
+					<div id="process-cur">
+						<span id="cur-btn"></span>
+					</div>
+					<div id="process-ready"></div>
+				</div>
+				<!--total-time 总时间 -->
+				<span id="total-time"></span>
+			</div>
+			<div id="control">
+				<!--loop 循环按钮  -->
+                <span class="loop"></span>
+                <!--pre 上一曲按钮  -->
+                <span class="pre"></span>
+                <!--play 播放按钮  -->
+                <span class="play"></span>
+                <!--pause 暂停按钮  -->
+                <span class="pause" style="display:none"></span>
+                <!--next 下一曲按钮  -->
+                <span class="next"></span>
+                <!--list 列表按钮  -->
+                <span class="list"></span>
+            </div>
+		</div>
+		<div id="list-mask"></div>
+		<div id="play-list">
+			<div>
+				<div class="list-title">播放列表(<span id="playListCount"></span>)</div>
+				<div class="list-title-close">×</div>
+			</div>
+			<!-- 歌曲列表 -->
+			<ul></ul>
+		</div>
+		<!-- 主页 -->
+		<div id="stage">
+		  <section class="container">
+		    <div class="meet1"><img src="img/hym.jpg" alt="" title="暗涌"></div> 
+		    <div class="meet2"><img src="img/dknz.jpg" alt="" title="值得"></div>
+		    <div class="meet3"><img src="img/xuruyun.jpg" alt="" title="独角戏"></div>
+		    <div class="meet4"><img src="img/zhl.jpg" alt="" title="美丽花蝴蝶"></div>
+		    <div class="meet5"><img src="img/zjx.jpg" alt="" title="后来"></div>
+		    <!-- <div class="meet6"><img src="img/js.jpg" alt="" title="你说此生最美的风景"></div>
+		    <div class="meet6"><img src="img/lry.jpg" alt="" title="亲爱的路人"></div>
+		    <div class="meet6"><img src="img/lzs.jpg" alt="" title="给自己的歌"></div>
+		    <div class="meet6"><img src="img/lf.jpg" alt="" title="一个人的生活"></div>
+		    <div class="meet6"><img src="img/alin.jpg" alt="" title="以前以后"></div> -->
+		  </section>
+		</div>
+	</div>
+	<div style="display:none">
+		<audio  src="mp3/黄耀明 - 暗涌(Live) - live.mp3"></audio>
+	</div>
+<script type="text/javascript" src="js/move.js"></script>
+<script type="text/javascript" src="js/music.js"></script>
+</body>
+</html>
